@@ -222,6 +222,9 @@ class battle(models.Model):
     date_end = fields.Datetime()
     player1 = fields.Many2one('res.partner')
     player2 = fields.Many2one('res.partner')
+    colony1 = fields.Many2one('warcraft1.colony')
+    colony2 = fields.Many2one('warcraft1.colony')
+
 #    type = fields.Many2one('warcraft1.building_type')
 
 
